@@ -12,6 +12,10 @@ function MainMenu() {
           MEMORY GAME
         </h1>
       </div>
+      <div className="btn-group">
+        <button type="button">Start Game</button>
+        <button type="button">GitHub</button>
+      </div>
     </div>
   );
 }

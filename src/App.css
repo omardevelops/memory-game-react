@@ -5,3 +5,18 @@
 body {
   background-color: rgb(24, 21, 21);
 }
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  gap: 15px;
+}
+button {
+  font: inherit;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: rgb(186, 242, 131);
+}
