@@ -1,0 +1,23 @@
+#logo-container {
+  text-align: center;
+  padding: 15px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed1d24;
+}
+
+#logo-container > img {
+  width: 200px;
+}
+
+#logo-container > h1 {
+  font-family: 'Marvel';
+  color: white;
+  font-size: 4rem;
+}
+#logo-container > h1 > span {
+  font-size: 6rem;
+}

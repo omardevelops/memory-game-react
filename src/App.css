@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Marvel';
+  src: url(/src/assets/fonts/MarvelRegular-Dj83.ttf);
+}
+body {
+  background-color: rgb(24, 21, 21);
+}
