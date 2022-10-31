@@ -2,6 +2,10 @@ import React from 'react';
 import '../MainMenu.css';
 
 function MainMenu() {
+  const onGitHubClick = () => {
+    window.open('https://github.com/omardevelops/memory-game-react');
+  };
+
   return (
     <div className="MainMenu">
       <div id="logo-container">
@@ -14,7 +18,9 @@ function MainMenu() {
       </div>
       <div className="btn-group">
         <button type="button">Start Game</button>
-        <button type="button">GitHub</button>
+        <button type="button" onClick={onGitHubClick}>
+          GitHub
+        </button>
       </div>
     </div>
   );
