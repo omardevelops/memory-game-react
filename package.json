@@ -34,7 +34,8 @@
         }
       ],
       "comma-dangle": "off",
-      "linebreak-style": "off"
+      "linebreak-style": "off",
+      "no-unused-vars": "warn"
     }
   },
   "browserslist": {
