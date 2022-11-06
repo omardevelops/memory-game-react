@@ -1,0 +1,10 @@
+.MainMenu {
+  display: flex;
+  flex-direction: column;
+}
+.btn-group {
+  width: 70%;
+}
+.btn-group > button {
+  margin-bottom: 10px;
+}
