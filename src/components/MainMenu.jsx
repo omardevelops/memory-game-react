@@ -1,7 +1,10 @@
 import React from 'react';
 import '../MainMenu.css';
+import Button from './Button';
 
-function MainMenu() {
+function MainMenu(props) {
+  const { switchToGamePage } = props;
+
   const onGitHubClick = () => {
     window.open('https://github.com/omardevelops/memory-game-react');
   };
@@ -9,7 +12,6 @@ function MainMenu() {
   return (
     <div className="MainMenu">
       <div id="logo-container">
-        {/* <img src={logo} alt="Logo" /> */}
         <h1>
           <span>MARVEL</span>
           <br />
@@ -17,10 +19,8 @@ function MainMenu() {
         </h1>
       </div>
       <div className="btn-group">
-        <button type="button">Start Game</button>
-        <button type="button" onClick={onGitHubClick}>
-          GitHub
-        </button>
+        <Button onClick={switchToGamePage}>Start Game</Button>
+        <Button onClick={onGitHubClick}>GitHub</Button>
       </div>
     </div>
   );
