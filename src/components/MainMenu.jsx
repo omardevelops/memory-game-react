@@ -11,16 +11,9 @@ function MainMenu(props) {
 
   return (
     <div className="MainMenu">
-      <div id="logo-container">
-        <h1>
-          <span>MARVEL</span>
-          <br />
-          MEMORY GAME
-        </h1>
-      </div>
       <div className="btn-group">
         <Button onClick={switchToGamePage}>Start Game</Button>
-        <Button onClick={onGitHubClick}>GitHub</Button>
+        <Button onClick={onGitHubClick}>Repo on GitHub</Button>
       </div>
     </div>
   );
