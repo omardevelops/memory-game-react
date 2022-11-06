@@ -23,6 +23,6 @@ button {
   background-color: rgb(186, 242, 131);
 }
 button:hover,
-button:focus {
+button:focus-visible {
   filter: brightness(150%);
 }
