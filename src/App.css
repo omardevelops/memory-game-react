@@ -15,8 +15,14 @@ body {
 }
 button {
   font: inherit;
+  font-size: 2rem;
+  font-weight: bold;
   border: none;
-  border-radius: 15px;
-  padding: 10px 15px;
+  border-radius: 30px;
+  padding: 15px 10px;
   background-color: rgb(186, 242, 131);
+}
+button:hover,
+button:focus {
+  filter: brightness(150%);
 }
