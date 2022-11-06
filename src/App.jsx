@@ -13,6 +13,16 @@ function App() {
     recordLevel: 0,
   });
 
+  const incrementScore = (type) => {
+    if (type in scores === false) {
+      throw new Error(`Score type ${type} does not exist.`);
+    }
+    const newScores = { ...scores };
+    newScores[type] = scores[type] + 1;
+
+    setScores(newScores);
+  };
+
   const switchToGamePage = () => {
     setCurrentPage('game');
   };
@@ -20,7 +30,7 @@ function App() {
   // Allows loading the page to be dynamic (until I learn Router)
   const pages = {
     main: <MainMenu switchToGamePage={switchToGamePage} />,
-    game: <Game />,
+    game: <Game incrementScore={incrementScore} />,
   };
 
   return (

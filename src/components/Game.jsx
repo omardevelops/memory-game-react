@@ -1,9 +1,11 @@
 import React from 'react';
+import Button from './Button';
 
-function Game() {
+function Game(props) {
+  const { incrementScore } = props;
   return (
     <div className="Game">
-      <h1>Game</h1>
+      <Button onClick={() => incrementScore('recordLevel')}>Increment</Button>
     </div>
   );
 }
