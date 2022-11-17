@@ -1,5 +1,5 @@
 import React from 'react';
-// Header component that contains text or an image
+// Header component that contains scores and logo
 function Header(props) {
   const { statusText, scores } = props;
   return (

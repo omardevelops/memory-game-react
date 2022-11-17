@@ -5,7 +5,7 @@ function Game(props) {
   const { incrementScore } = props;
   return (
     <div className="Game">
-      <Button onClick={() => incrementScore('recordLevel')}>Increment</Button>
+      <h1>Needs implementation</h1>
     </div>
   );
 }

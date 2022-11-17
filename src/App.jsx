@@ -18,7 +18,6 @@ function App() {
   const initializeLocalScores = () => {
     localStorage.setItem('record', 0);
     localStorage.setItem('recordLevel', 0);
-    console.log(localStorage);
   };
 
   // Fetches scores from localStorage
@@ -50,6 +49,13 @@ function App() {
     setScores(newScores);
   };
 
+  const resetScoreToZero = () => {
+    const newScores = { ...scores };
+    newScores.score = 0;
+
+    setScores(newScores);
+  };
+
   const switchToGamePage = () => {
     setCurrentPage('game');
   };
@@ -72,13 +78,6 @@ function App() {
     <div className="App">
       <Header scores={scores} statusText="" />
       {pages[currentPage]}
-      <Button
-        onClick={() => {
-          fetchFromLocal();
-        }}
-      >
-        Test
-      </Button>
     </div>
   );
 }
