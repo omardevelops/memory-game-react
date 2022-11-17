@@ -12,7 +12,7 @@ function Header(props) {
         </h2>
         <h1>
           Score:
-          {` ${scores.current}`}
+          {` ${scores.score}`}
         </h1>
         <h2>
           Record Level:

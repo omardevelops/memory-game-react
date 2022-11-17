@@ -10,7 +10,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('main');
   const [scores, setScores] = useState({
     record: 0,
-    current: 0,
+    score: 0,
     recordLevel: 0,
   });
 
@@ -45,7 +45,7 @@ function App() {
 
   const incrementScore = () => {
     const newScores = { ...scores };
-    newScores.current = scores.current + 1;
+    newScores.score = scores.score + 1;
 
     setScores(newScores);
   };
@@ -74,7 +74,6 @@ function App() {
       {pages[currentPage]}
       <Button
         onClick={() => {
-          updateLocalScores(1, 3);
           fetchFromLocal();
         }}
       >
