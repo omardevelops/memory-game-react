@@ -18,6 +18,13 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "jsx-quotes": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "linebreak-style": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
